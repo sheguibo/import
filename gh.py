@@ -3,9 +3,9 @@ def gh():
 	gh_Thread().start()
 	
 class gh_Thread(threading.Thread):
-    def __init__(self,app):
+    def __init__(self):
         threading.Thread.__init__(self)
-        self.app=app
+    
 
     def run(self):
         while True:
